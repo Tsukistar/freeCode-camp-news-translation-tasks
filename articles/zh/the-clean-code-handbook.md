@@ -1,11 +1,10 @@
 ---
-title: "The Clean Code Handbook: How to Write Better Code for Agile Software
-  Development"
+title: "代码整洁手册：如何在敏捷开发中编写更好的代码"
 date: 2025-04-10T13:43:06.827Z
 author: Programming with Shahan
 authorURL: https://www.freecodecamp.org/news/author/codewithshahan/
 originalURL: https://www.freecodecamp.org/news/the-clean-code-handbook/
-posteditor: ""
+posteditor: "月落星河Tsukistar"
 proofreader: ""
 ---
 
