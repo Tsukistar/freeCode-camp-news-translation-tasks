@@ -8,27 +8,27 @@ posteditor: "月落星河Tsukistar"
 proofreader: ""
 ---
 
-Building scalable software applications requires writing clean code that’s so simple that any dev can understand it.
+构建可扩展的软件应用程序需要开发者编写任何其他开发者都能理解的整洁的代码。
 
 <!-- more -->
 
-In this article, I’ll explain and demonstrate what clean code is. Then I’ll share my favorite clean code patterns for building modern Agile applications.
+在这篇文章中，我将解释和示范什么是整洁的代码。然后我将分享我最喜欢的构建现代敏捷应用程序的简洁代码模式。
 
-I won’t use complex jargon. I’ll hit you with simple, clear JavaScript examples that focus on the core concepts. Straight to the point, no nonsense – that’s how I roll.
+我不会使用复杂的术语。我将我将用简单、清晰的 JavaScript 代码示例来介绍那些核心概念。开门见山，没有废话——这就是我的风格。
 
-Let’s get started.
+让我们开始吧。
 
-## Table of Contents
+## 目录
 
-1.  [The Cost of Bad Code][1]
+1.  [糟糕代码的代价][1]
     
-2.  [Clean Coder vs. Messy Coder][2]
+2.  [编写整洁代码的程序员vs.编写凌乱代码的程序员][2]
     
-3.  [AI Can’t Save You If Your Code is a Mess 🗑️][3]
+3.  [如果你的代码十分混乱，AI都没办法救你 🗑️][3]
     
-4.  [12 Clean Code Design Patterns for Building Agile Applications ⚖️][4]
+4.  [构建敏捷应用程序的12种代码整洁设计模式 ⚖️][4]
     
-    -   [🌿 Use Names That Mean Something][5]
+    -   [🌿 使用有意义的名字][5]
         
     -   [🔨 Keep Functions Laser-Focused (SRP)][6]
         
@@ -54,32 +54,34 @@ Let’s get started.
         
     -   [🏟️ Follow the Open/Closed Principle][17]
         
-5.  [Modern Best Practices to Help You Write Clean Code: A Summary 🥷][18]
+5.  [帮助你编写简洁代码的现代最佳实践：总结 🥷][18]
     
-6.  [Automated Tools for Maintaining Clean Code ⚓][19]
+6.  [维护代码整洁的自动化工具 ⚓][19]
     
-    -   [1️⃣ Static Analysis][20]
+    -   [1️⃣ 静态分析][20]
         
-    -   [2️⃣ Automated Code Formatting][21]
+    -   [2️⃣ 自动代码格式化][21]
         
-    -   [3️⃣ Continuous Integration (CI) Testing][22]
+    -   [3️⃣ 持续集成（CI）测试][22]
         
-    -   [4️⃣ CI/CD pipelines][23]
+    -   [4️⃣ 持续集成/持续部署 流水线][23]
         
-7.  [The Role of Documentation in Agile Software Development 🚣][24]
+7.  [文档在敏捷软件开发中的作用 🚣][24]
     
-8.  [Conclusion 🏁][25]
+8.  [总结 🏁][25]
     
-9.  [Frequently Asked Questions About Clean Code 🧯][26]
+9.  [关于代码整洁的常见问题 🧯][26]
     
 
-![Image of agile software development meme](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/xh3j6ccn1hc3euc3lfyl.png)
+![敏捷软件开发的梗图](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/xh3j6ccn1hc3euc3lfyl.png)
 
-In Agile, where change is the only constant, clean code is your armor. It makes you adaptable, swift, and, most importantly, in control.
+在“变化是唯一不变”的敏捷开发中，整洁的代码是你的护甲。做好代码整洁这件事可以让你有更强的适应力，反应迅速，最重要的是，他让你对项目整体可控。
 
-Here’s the truth: writing clean code is not optional if you want to survive in the software development industry. Fortunately, we human beings are able to master clean code with some effort and practice.
+事实是：如果你想在软件开发行业生存下去，编写干净的代码并不是可选项，而是必须要遵守的规范。
 
-## The Cost of Bad Code
+幸运的是，我们人类能够通过一些努力和实践掌握代码整洁这个本领。
+
+## 糟糕代码的代价
 
 ![Image of cost of messy code vs clean code graph by shahan](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/wdai6npb55j71sguj6kl.png)
 
