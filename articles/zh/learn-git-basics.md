@@ -833,7 +833,7 @@ This command displays a concise and graphical representation of the commit histo
 
 ### 如何管理合并后的分支
 
-随着项目的进展，一旦分支的更改完成，您将把它们合并回主分支。要识别已合并的分支，请执行：
+随着项目的进展，一旦分支的更改完成，你就需要把它们合并回主分支。要识别已合并的分支，请执行：
 
 ```bash
 $ git branch --merged
@@ -845,7 +845,7 @@ $ git branch --merged
 $ git branch -d branch_name
 ```
 
-然而，对包含未合并工作的分支，请使用：
+然而，如果需要查看包含未合并工作的分支，请使用：
 
 ```bash
 $ git branch --no-merged
@@ -889,7 +889,7 @@ $ git push origin --delete old_branch_name
 
 ### 如何更改默认分支名称
 
-重命名默认分支（通常是 'master'）需要谨慎和协调，因为它会影响项目集成和协作者。
+重命名默认分支（通常是 'master'）需要谨慎和事先进行协调，因为它会影响项目集成和协作者。
 
 ```bash
 $ git branch --move master main
@@ -907,20 +907,20 @@ $ git push --set-upstream origin main
 $ git push origin --delete master
 ```
 
-这与 `$ git config --global init.defaultBranch main` 我们在配置部分讨论的方式不同，如下：
+这与我们在配置部分讨论的 `$ git config --global init.defaultBranch main` 有以下不同之处：
 
 -   `$ git branch --move master main`: 该命令将当前仓库中名为 “master” 的现有分支重命名为 “main”。它是一种仅影响该仓库的本地操作。
 -   `$ git config --global init.defaultBranch main`: 该命令全局设置新仓库的默认分支名称。它不会重命名现有分支，但确保之后创建的任何新仓库将使用 “main” 作为默认分支名称，而不是 “master”。
 
-**附加资源**: 可以看看这个官方 Git [资源][28]，它提供的信息丰富的视觉效果和图表，可以为您提供有关远程分支和分支管理概念的更多清晰度。
+**附加资源**: 可以看看这个官方 Git [资源][28]，其中包含丰富的可视化图表，可以帮助您更清楚地了解远程分支和分支管理概念。
 
 ## 分支工作流
 
 让我们更详细地了解分支，并看看在大型项目中常用的一种分支工作流。
 
-### 长期运行的分支：
+### 长期分支：
 
-在 Git 中，长期运行的分支是在较长时间内保持开放的分支。
+在 Git 中，长期分支是指在较长时间内保持开启状态且未合入主线的分支。
 
 ### 主题分支：
 
@@ -964,12 +964,11 @@ $ git rebase master
 
 这个命令会将你在“feature”分支上所做的所有提交/更改应用到“master”分支的最新提交之上，并一一重放这些提交。
 
-不仅是主分支，你还可以将一个主题分支变基到另一个主题分支上。示例：
+不仅是主分支，你还可以将一个主题分支变基到另一个主题分支上。举个例子：
 
 假设你正在一个项目中工作，有两个功能分支：“frontend”和“backend”。你在“frontend”分支上进行了若干提交，现在希望将这些更改整合到“backend”分支中。
 
-这次我们用一个不同的方法——  
-使用 `git rebase` 的 `--onto` 选项将“frontend”分支变基到“backend”分支上：
+这次我们用一个不同的方法：使用 `git rebase` 的 `--onto` 选项将“frontend”分支变基到“backend”分支上：
 
 ```bash
 $ git rebase --onto backend frontend
@@ -1010,9 +1009,9 @@ $ git merge frontend
 
 ---
 
-如果你读了这么多，感谢作者以示关心。表示感谢
+如果你读了这么多，感谢作者以示关心。
 
-学习编程免费。freeCodeCamp 的开源课程已经帮助超过 40,000 人获得了开发者的工作。[开始学习][29]
+免费学习编程！freeCodeCamp 的开源课程已经帮助超过 40,000 人获得了开发者的工作。[开始学习][29]
 
 [1]: #what-is-git
 [2]: #what-makes-git-different-from-other-version-control-systems
